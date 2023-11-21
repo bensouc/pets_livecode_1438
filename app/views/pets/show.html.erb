@@ -1,0 +1,19 @@
+<%# @pet %>
+<div class="container">
+  <h2>
+    ❤<%= @pet.name.capitalize %>
+  </h2>
+  <div  class=''>
+    <div class="d-flex">
+      <i class="fa-solid fa-location-dot"></i><%= @pet.address.capitalize %>
+    </div>
+    <p><%= @pet.species.capitalize %></p>
+    <p><%= @pet.found_on %></p>
+  </div>
+
+  <%= link_to edit_pet_path(@pet) do %>
+  <div class="btn btn-primary">
+    <i class="fa-solid fa-pen"></i>
+  </div>
+  <% end %>
+</div>

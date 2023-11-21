@@ -1,0 +1,8 @@
+<h1>Les petits pets perdus</h1>
+
+<ul>
+  <% @pets.each do |pet| %>
+    <li>  <%= link_to pet.name, pet_path(pet), class:'text-decoration-none' %>  </li>
+  <% end %>
+
+</ul>

@@ -1,0 +1,13 @@
+
+<div class='container w-50'>
+  <%= simple_form_for pet do  |f| %>
+  <%= f.input :name %>
+  <%= f.input :address %>
+  <%= f.input :species, collection: Pet::SPECIES   %>
+  <div class='input-bmo'>
+    <%= f.input :found_on, html5: true %>
+
+  </div>
+  <%= f.submit%>
+  <% end %>
+</div>
